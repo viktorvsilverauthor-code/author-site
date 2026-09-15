@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIKTOR V. SILVER — Author | Science Fiction, Essays, Children's Books</title>
+<link rel="canonical" href="https://viktorvsilverauthor-code.github.io/author-site/">
+<meta property="og:url" content="https://viktorvsilverauthor-code.github.io/author-site/">
+<meta name="description" content="Official site of author Viktor V. Silver. The PALIMPSEST science-fiction trilogy, The Campfire Dissident, and Tim and the Time Ravine. Read free with Kindle Unlimited. Not what happens to them. What they do about it.">
+<meta name="author" content="Viktor V. Silver">
+<meta property="og:title" content="VIKTOR V. SILVER — Author">
+<meta property="og:description" content="Not what happens to them. What they do about it.">
+<meta property="og:type" content="website">
+<!-- NOTE: og:image should be an absolute URL once the site has a home. -->
+<meta property="og:image" content="https://viktorvsilverauthor-code.github.io/author-site/covers/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Viktor V. Silver — author of the PALIMPSEST trilogy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VIKTOR V. SILVER — Author">
+<meta name="twitter:description" content="Not what happens to them. What they do about it.">
+<meta name="twitter:image" content="https://viktorvsilverauthor-code.github.io/author-site/covers/og-image.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080808'/%3E%3Cpath d='M16 6 L26 16 L16 26 L6 16 Z' fill='%23e01212'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#08080a; --bg2:#101013; --bg3:#17171b;
+    --fg:#f5f2ef; --fg2:#94908c;
+    --red:#e01212; --red-hi:#ff2e2e;
+    --line:#241a1b; --line-2:#3b2023;
+    --sans:'Helvetica Neue',Helvetica,Arial,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--fg);overflow-x:hidden;
+    font-family:var(--sans);font-size:17px;line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:min(1140px,100% - 2.5rem);margin-inline:auto}
+  ::selection{background:var(--red);color:#fff}
+
+  /* top ticker */
+  .ticker{
+    background:var(--red);color:#fff;font-size:11.5px;font-weight:800;
+    letter-spacing:.14em;text-transform:uppercase;padding:.5rem 1rem;text-align:center;
+  }
+  .ticker span{opacity:.62;margin:0 .5rem}
+
+  /* header */
+  header{
+    position:sticky;top:0;z-index:30;backdrop-filter:blur(14px);
+    background:rgba(8,8,10,.86);border-bottom:1px solid var(--line);
+  }
+  header::after{content:"";display:block;height:2px;background:linear-gradient(90deg,var(--red),transparent 60%)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;padding:1rem 0}
+  .logo{font-size:15px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:.6rem;white-space:nowrap}
+  .logo::before{content:"";width:11px;height:11px;background:var(--red);flex:0 0 auto;transform:rotate(45deg)}
+  .nav ul{display:flex;gap:1.8rem;list-style:none;margin:0;padding:0;font-size:12.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+  .nav a{color:var(--fg2);text-decoration:none;transition:.2s;padding-bottom:3px;border-bottom:2px solid transparent}
+  .nav a:hover{color:var(--fg);border-color:var(--red)}
+  .nav .cta{
+    border:2px solid var(--red);color:#fff;background:var(--red);
+    padding:.55rem 1.05rem;font-size:11.5px;letter-spacing:.11em;
+  }
+  .nav .cta:hover{background:var(--red-hi);border-color:var(--red-hi);box-shadow:0 0 26px rgba(224,18,18,.45)}
+  @media(max-width:920px){ .nav ul{display:none} }
+
+  /* hero */
+  .hero{position:relative;padding:clamp(3.2rem,9vw,6.5rem) 0 clamp(2.8rem,7vw,5rem);overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;top:-40%;left:-15%;width:75vw;height:75vw;pointer-events:none;
+    background:radial-gradient(circle,rgba(224,18,18,.2),transparent 62%);
+  }
+  .hero .wrap{position:relative}
+  .kicker{
+    display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--red);border:1px solid var(--line-2);padding:.45rem .95rem;margin:0 0 1.7rem;
+  }
+  h1{font-weight:900;margin:0;text-transform:uppercase;font-size:clamp(2.6rem,8.6vw,5.3rem);line-height:.93;letter-spacing:-.02em}
+  h1 .accent{color:var(--red);text-shadow:0 0 46px rgba(224,18,18,.45)}
+  .lead{margin:1.8rem 0 0;max-width:46ch;font-size:clamp(1.08rem,2.3vw,1.34rem);color:var(--fg)}
+  .lead-sub{margin:1rem 0 0;max-width:54ch;color:var(--fg2);font-size:1rem}
+  .btns{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.6rem}
+  .btn{
+    display:inline-block;padding:.95rem 1.8rem;text-decoration:none;border-radius:0;
+    font-size:12.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+    transition:.18s;border:2px solid transparent;cursor:pointer;font-family:var(--sans);
+  }
+  .btn-primary{background:var(--red);color:#fff;border-color:var(--red)}
+  .btn-primary:hover{background:var(--red-hi);border-color:var(--red-hi);box-shadow:0 0 34px rgba(224,18,18,.5)}
+  .btn-ghost{border-color:#4a4341;color:var(--fg)}
+  .btn-ghost:hover{border-color:var(--red);color:var(--red);box-shadow:0 0 30px rgba(224,18,18,.2)}
+  .stats{display:flex;gap:clamp(1.6rem,5vw,3.2rem);flex-wrap:wrap;margin-top:3.4rem;padding-top:2rem;border-top:1px solid var(--line)}
+  .stat b{display:block;font-size:clamp(1.6rem,4vw,2.15rem);font-weight:900;color:var(--red);line-height:1}
+  .stat span{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--fg2)}
+
+  /* band */
+  .band{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:linear-gradient(90deg,rgba(224,18,18,.11),transparent 70%);
+    padding:1.5rem 0;
+  }
+  .band .wrap{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;justify-content:space-between}
+  .band-txt{font-size:13px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+  .band-txt em{color:var(--red);font-style:normal}
+  .band a{color:var(--fg2);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--red);padding-bottom:2px}
+  .band a:hover{color:var(--red)}
+
+  /* sections */
+  section{padding:clamp(3.2rem,7vw,5.4rem) 0;border-top:1px solid var(--line)}
+  section[id],footer[id]{scroll-margin-top:92px}
+  .sec-head{display:flex;align-items:baseline;gap:1.1rem;margin-bottom:.7rem}
+  .sec-num{font-size:13px;font-weight:800;letter-spacing:.15em;color:var(--red)}
+  .sec-title{font-weight:900;font-size:clamp(1.6rem,3.8vw,2.35rem);margin:0;text-transform:uppercase;letter-spacing:-.015em;line-height:1.02}
+  .sec-sub{color:var(--fg2);margin:0 0 2.7rem;max-width:60ch}
+  .sec-sub b{color:var(--fg);font-weight:700}
+
+  /* books */
+  .books{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:2.8rem 1.9rem}
+  .book{display:flex;flex-direction:column;gap:1.05rem}
+  .cover{
+    position:relative;aspect-ratio:2/3;overflow:hidden;background:var(--bg3);
+    border:1px solid var(--line-2);
+    transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+  }
+  .cover img{width:100%;height:100%;object-fit:cover;display:block}
+  .cover::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(224,18,18,0),rgba(224,18,18,.22));
+    opacity:0;transition:opacity .28s ease;
+  }
+  .book:hover .cover{transform:translateY(-6px);border-color:var(--red);box-shadow:0 24px 60px rgba(224,18,18,.26)}
+  .book:hover .cover::after{opacity:1}
+  .badge{font-size:10.5px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--red);margin:0}
+  .book h3{font-size:1rem;font-weight:800;margin:.3rem 0 0;line-height:1.28;text-transform:uppercase;letter-spacing:.005em}
+  .book .tag{font-family:var(--serif);font-size:.95rem;color:var(--fg2);margin:.5rem 0 0;line-height:1.45}
+  .buys{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.15rem}
+  .buy{
+    display:inline-flex;align-items:center;gap:.45rem;text-decoration:none;
+    padding:.6rem .95rem;font-size:11.5px;font-weight:800;letter-spacing:.1em;
+    text-transform:uppercase;border:2px solid var(--red);color:#fff;background:var(--red);
+    transition:.18s;
+  }
+  .buy:hover{background:var(--red-hi);border-color:var(--red-hi);box-shadow:0 0 26px rgba(224,18,18,.42)}
+  .buy.alt{background:none;color:var(--fg);border-color:#4a4341}
+  .buy.alt:hover{background:none;color:var(--red);border-color:var(--red);box-shadow:none}
+  .buy i{font-style:normal;opacity:.72;font-weight:700}
+  .ku{display:flex;align-items:center;gap:.45rem;font-size:11.5px;font-weight:700;letter-spacing:.07em;
+      text-transform:uppercase;color:var(--fg2);margin:.1rem 0 0}
+  .ku::before{content:"";width:7px;height:7px;background:var(--red);transform:rotate(45deg);flex:0 0 auto}
+  .ku b{color:var(--fg);font-weight:800}
+  .gr{display:inline-block;margin-top:.6rem;font-size:11px;font-weight:700;letter-spacing:.09em;
+      text-transform:uppercase;color:var(--fg2);text-decoration:none;
+      border-bottom:1px solid transparent;transition:.2s}
+  .gr:hover{color:var(--red);border-color:var(--red)}
+
+  /* posts */
+  .posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:1.6rem}
+  .post{
+    display:flex;flex-direction:column;gap:.6rem;padding:1.5rem 1.4rem;
+    background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--red);
+    text-decoration:none;color:inherit;transition:.2s;
+  }
+  .post:hover{border-color:var(--line-2);border-left-color:var(--red-hi);transform:translateY(-3px);
+    box-shadow:0 18px 44px rgba(224,18,18,.16)}
+  .post .date{font-size:10.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+  .post h3{font-size:1rem;font-weight:800;margin:0;line-height:1.3}
+  .post p{margin:0;font-family:var(--serif);font-size:.93rem;color:var(--fg2);line-height:1.45}
+  .post .more{margin-top:auto;padding-top:.9rem;font-size:11px;font-weight:800;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--fg2)}
+  .post:hover .more{color:var(--red)}
+
+  /* about */
+  .about{display:grid;grid-template-columns:280px 1fr;gap:clamp(1.8rem,5vw,3.4rem);align-items:start}
+  .side{display:flex;flex-direction:column;gap:1.2rem}
+  .portrait{margin:0;position:relative;border:1px solid var(--line-2);overflow:hidden}
+  .portrait img{width:100%;height:auto;display:block;filter:grayscale(.4) contrast(1.06)}
+  .portrait::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(165deg,rgba(224,18,18,.22),transparent 58%);
+    mix-blend-mode:screen;
+  }
+  .facts{border:1px solid var(--line);background:var(--bg2);padding:1.5rem}
+  .facts h4{margin:0 0 1rem;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+  .facts dl{margin:0;font-size:14px}
+  .facts dt{font-size:10.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--fg2);margin-top:1rem}
+  .facts dt:first-child{margin-top:0}
+  .facts dd{margin:.2rem 0 0}
+  .about-body p{margin:0 0 1.15rem}
+  .about-body p:first-of-type::first-letter{
+    float:left;font-size:3.5rem;line-height:.82;font-weight:900;color:var(--red);
+    padding:.1rem .5rem 0 0;
+  }
+  .about-body p:last-child{margin-bottom:0}
+  .pull{
+    font-family:var(--serif);font-size:1.35rem;line-height:1.4;color:var(--fg);
+    border-left:3px solid var(--red);padding:.2rem 0 .2rem 1.2rem;margin:1.8rem 0;
+  }
+  @media(max-width:800px){ .about{grid-template-columns:1fr} .side{max-width:320px} }
+
+  /* subscribe */
+  .sub{text-align:center;max-width:620px;margin-inline:auto}
+  .sub .sec-head{justify-content:center}
+  .embed{
+    max-width:480px;margin:2rem auto 0;background:#fff;border:1px solid var(--red);
+    box-shadow:0 18px 50px rgba(224,18,18,.2);overflow:hidden;
+  }
+  .embed iframe{display:block;width:100%;border:0}
+  .embed-note{margin:1rem 0 0;font-size:12.5px;color:var(--fg2)}
+
+  /* footer */
+  footer.site{border-top:1px solid var(--line);padding:2.6rem 0;font-size:13px;color:var(--fg2);position:relative}
+  footer.site::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--red),transparent)}
+  .foot{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;align-items:center}
+  .foot a{color:var(--fg2);text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:11.5px;border-bottom:2px solid transparent;transition:.2s}
+  .foot a:hover{color:var(--red);border-color:var(--red)}
+  .socials{display:flex;gap:1.4rem;flex-wrap:wrap}
+  a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="ticker">
+  The complete PALIMPSEST trilogy — out now <span>·</span> All titles free to read with Kindle Unlimited
+</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">Viktor V. Silver</div>
+    <nav>
+      <ul>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#subscribe">Newsletter</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="https://www.amazon.com/author/5152viktorsilver" target="_blank" rel="noopener">Buy the books</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <p class="kicker">Author · Science Fiction · Essays</p>
+      <h1>VIKTOR<br><span class="accent">V. SILVER</span></h1>
+      <p class="lead">Not what happens to them. What they do about it.</p>
+      <p class="lead-sub">A science-fiction trilogy that stretches across seven thousand years. Hard-boiled essays on staying whole. A children's book about the moments you can't get back.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#books">Browse the books</a>
+        <a class="btn btn-ghost" href="https://www.amazon.com/author/5152viktorsilver" target="_blank" rel="noopener">Amazon author page →</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>5</b><span>Books published</span></div>
+        <div class="stat"><b>3</b><span>PALIMPSEST novels</span></div>
+        <div class="stat"><b>100%</b><span>Dictated, word by word</span></div>
+        <div class="stat"><b>2026</b><span>Debut year</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="wrap">
+      <div class="band-txt"><em>PALIMPSEST</em> — three novels. One story, told across centuries.</div>
+      <a href="#books">Read in order →</a>
+    </div>
+  </div>
+
+  <section id="books">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">The Books</h2></div>
+      <p class="sec-sub">Every title is on Amazon, <b>free to read with Kindle Unlimited</b> and available to buy for Kindle — paperbacks where noted. Click a button and you land straight on the book.</p>
+
+      <div class="books">
+
+        <article class="book">
+          <div class="cover"><img src="covers/primordial-code.jpg" alt="PALIMPSEST: Primordial Code — Viktor V. Silver" loading="lazy" width="720" height="1080"></div>
+          <div>
+            <p class="badge">PALIMPSEST · Book One</p>
+            <h3>PALIMPSEST: Primordial Code</h3>
+            <p class="tag">The old world is gone. Something is still writing underneath it.</p>
+            <div class="buys">
+              <a class="buy" href="https://www.amazon.com/dp/B0HGMXDLBC" target="_blank" rel="noopener">Buy on Amazon <i>$3.99</i></a>
+            </div>
+            <p class="ku">Free with <b>Kindle Unlimited</b></p>
+            <a class="gr" href="https://www.goodreads.com/book/show/257535319-palimpsest" target="_blank" rel="noopener">Rate on Goodreads →</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover"><img src="covers/convergence.jpg" alt="PALIMPSEST: Convergence — Viktor V. Silver" loading="lazy" width="720" height="1080"></div>
+          <div>
+            <p class="badge">PALIMPSEST · Book Two</p>
+            <h3>PALIMPSEST: Convergence</h3>
+            <p class="tag">Convergence is not surrender.</p>
+            <div class="buys">
+              <a class="buy" href="https://www.amazon.com/dp/B0HGXPJR2P" target="_blank" rel="noopener">Kindle <i>$3.99</i></a>
+              <a class="buy alt" href="https://www.amazon.com/dp/B0HH8QXWNF" target="_blank" rel="noopener">Paperback <i>$10.00</i></a>
+            </div>
+            <p class="ku">Free with <b>Kindle Unlimited</b></p>
+            <a class="gr" href="https://www.goodreads.com/book/show/257636375-palimpsest" target="_blank" rel="noopener">Rate on Goodreads →</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover"><img src="covers/unwritten-self.jpg" alt="PALIMPSEST: Unwritten Self — Viktor V. Silver" loading="lazy" width="720" height="1080"></div>
+          <div>
+            <p class="badge">PALIMPSEST · Book Three — Final</p>
+            <h3>PALIMPSEST: Unwritten Self</h3>
+            <p class="tag">What would you refuse to have healed?</p>
+            <div class="buys">
+              <a class="buy" href="https://www.amazon.com/dp/B0HH3H1RZS" target="_blank" rel="noopener">Kindle <i>$3.99</i></a>
+              <a class="buy alt" href="https://www.amazon.com/dp/B0HHMXML3Y" target="_blank" rel="noopener">Paperback <i>$10.00</i></a>
+            </div>
+            <p class="ku">Free with <b>Kindle Unlimited</b></p>
+            <a class="gr" href="https://www.goodreads.com/book/show/257717254-palimpsest" target="_blank" rel="noopener">Rate on Goodreads →</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover"><img src="covers/campfire-dissident.jpg" alt="The Campfire Dissident — Viktor V. Silver" loading="lazy" width="720" height="1080"></div>
+          <div>
+            <p class="badge">Essays</p>
+            <h3>The Campfire Dissident</h3>
+            <p class="tag">Pull up a chair. The fire is already burning.</p>
+            <div class="buys">
+              <a class="buy" href="https://www.amazon.com/dp/B0HFS9DBLM" target="_blank" rel="noopener">Buy on Amazon <i>$3.99</i></a>
+            </div>
+            <p class="ku">Free with <b>Kindle Unlimited</b></p>
+            <a class="gr" href="https://www.goodreads.com/book/show/257144117-the-campfire-dissident" target="_blank" rel="noopener">Rate on Goodreads →</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover"><img src="covers/tim-time-ravine.jpg" alt="Tim and the Time Ravine — Viktor V. Silver" loading="lazy" width="720" height="1080"></div>
+          <div>
+            <p class="badge">Children's · Illustrated</p>
+            <h3>Tim and the Time Ravine</h3>
+            <p class="tag">The journey home is just the beginning.</p>
+            <div class="buys">
+              <a class="buy" href="https://www.amazon.com/dp/B0HFX5231Q" target="_blank" rel="noopener">Buy on Amazon <i>$1.99</i></a>
+            </div>
+            <p class="ku">Free with <b>Kindle Unlimited</b></p>
+            <a class="gr" href="https://www.goodreads.com/book/show/257198859-tim-and-the-time-ravine" target="_blank" rel="noopener">Rate on Goodreads →</a>
+          </div>
+        </article>
+
+        <article class="book" style="justify-content:flex-end">
+          <div style="border:1px dashed var(--line-2);padding:1.6rem;display:flex;flex-direction:column;gap:.7rem">
+            <p class="badge">In the works</p>
+            <p style="margin:0;color:var(--fg2);font-size:.95rem">There is much in him that has not been said yet. The next book is being dictated right now — leave your email below and hear about it first.</p>
+            <div class="buys"><a class="buy alt" href="#subscribe">Get notified</a></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">Latest Writing</h2></div>
+      <p class="sec-sub">Essays on maturity, power, and staying whole — published on Substack, straight from the voice that dictates the books.</p>
+
+      <div class="posts">
+        <a class="post" href="https://viktorvsilver.substack.com/p/gas-station-with-flags-sharks-at" target="_blank" rel="noopener">
+          <span class="date">Sep 12, 2026</span>
+          <h3>Gas Station with Flags, Sharks at the Table: The Final Act of the Imperial Bender</h3>
+          <p>The Bunker Geopolitics and the Mind of the Mob: How a Superpower Backslid Into a Sinkhole</p>
+          <span class="more">Read on Substack →</span>
+        </a>
+        <a class="post" href="https://viktorvsilver.substack.com/p/the-executioner-in-the-mirror" target="_blank" rel="noopener">
+          <span class="date">Sep 12, 2026</span>
+          <h3>The Executioner in the Mirror</h3>
+          <p>The room is always quiet right before you break.</p>
+          <span class="more">Read on Substack →</span>
+        </a>
+        <a class="post" href="https://viktorvsilver.substack.com/p/the-anatomy-of-the-mark-why-the-octagon" target="_blank" rel="noopener">
+          <span class="date">Sep 12, 2026</span>
+          <h3>The Anatomy of the Mark: Why the Octagon Bears My Name</h3>
+          <p>A creative pseudonym is more than just a string of letters on a cover; it is a declaration of intent.</p>
+          <span class="more">Read on Substack →</span>
+        </a>
+        <a class="post" href="https://viktorvsilver.substack.com/p/scorched-ground-the-third-death" target="_blank" rel="noopener">
+          <span class="date">Sep 9, 2026</span>
+          <h3>Scorched Ground: The Third Death</h3>
+          <p>A man who decides to find the truth on his own, without borrowed instructions, signs a contract.</p>
+          <span class="more">Read on Substack →</span>
+        </a>
+      </div>
+
+      <div class="btns" style="margin-top:2.2rem">
+        <a class="btn btn-ghost" href="https://viktorvsilver.substack.com/archive" target="_blank" rel="noopener">Read everything on Substack →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">About the Author</h2></div>
+      <p class="sec-sub">By training he is a lawyer. By trade he is a storyteller.</p>
+
+      <div class="about">
+        <div class="side">
+          <figure class="portrait">
+            <img src="covers/author-viktor-silver.jpg" alt="Viktor V. Silver" width="400" height="400">
+          </figure>
+          <aside class="facts">
+            <h4>At a glance</h4>
+            <dl>
+              <dt>Writes</dt>
+              <dd>Science fiction · Essays · Children's books</dd>
+              <dt>Method</dt>
+              <dd>Dictated, out loud, word by word</dd>
+              <dt>Published</dt>
+              <dd>Amazon — Kindle &amp; paperback</dd>
+              <dt>Language</dt>
+              <dd>English</dd>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="about-body">
+          <p>Viktor V. Silver writes about people who get knocked down and stay down — and then get up. The writing is lived, not learned from a book. By training he is a lawyer. By trade he is a storyteller. Neuropathy took his hands. It took keyboards, took typing, took the easy road from page one to The End. It left him his voice, so he dictates — every word, out loud, the slow way. He does not believe in shortcuts. Not in prose. Not in people.</p>
+
+          <p class="pull">His books are only beginning to be seen.</p>
+
+          <p>Essays on Stoicism and the long work of growing up. A science-fiction trilogy that stretches across centuries. A children's book that asks the first question: what makes a person who they are? One book, asked three ways — and the man who dictates it is nowhere near done. There is much in him that has not been said yet.</p>
+
+          <div class="btns" style="margin-top:2rem">
+            <a class="btn btn-ghost" href="https://www.amazon.com/author/5152viktorsilver" target="_blank" rel="noopener">Author page on Amazon →</a>
+            <a class="btn btn-ghost" href="https://www.goodreads.com/author/show/71850988.VIKTOR_V_SILVER" target="_blank" rel="noopener">Profile on Goodreads →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="subscribe">
+    <div class="wrap sub">
+      <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">Get the next book first</h2></div>
+      <p class="sec-sub" style="margin-inline:auto">No noise. Just news: a new book, a new essay, a chapter read aloud. Unsubscribe whenever you like.</p>
+      <div class="embed">
+        <iframe src="https://viktorvsilver.substack.com/embed" title="Subscribe to Viktor V. Silver on Substack"
+                width="100%" height="250" frameborder="0" scrolling="no" loading="lazy"></iframe>
+      </div>
+      <p class="embed-note">Powered by Substack — the same list that gets every new essay.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site" id="contact">
+  <div class="wrap foot">
+    <div>© <span id="year"></span> Viktor V. Silver. All rights reserved.</div>
+    <div class="socials">
+      <a href="https://www.amazon.com/author/5152viktorsilver" target="_blank" rel="noopener">Amazon</a>
+      <a href="https://viktorvsilver.substack.com/" target="_blank" rel="noopener">Substack</a>
+      <a href="https://www.goodreads.com/author/show/71850988.VIKTOR_V_SILVER" target="_blank" rel="noopener">Goodreads</a>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Viktor V. Silver","jobTitle":"Author",
+"description":"Author of the PALIMPSEST science-fiction trilogy, The Campfire Dissident, and Tim and the Time Ravine.",
+"url":"https://www.amazon.com/author/5152viktorsilver",
+"sameAs":["https://www.amazon.com/author/5152viktorsilver","https://viktorvsilver.substack.com/","https://www.goodreads.com/author/show/71850988.VIKTOR_V_SILVER"]}
+</script>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
